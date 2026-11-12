@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Studio Dall'Asta — Commercialista per Terzo Settore e gestione d'impresa</title>
+  <meta name="description" content="Consulenza fiscale, contabile e gestionale per Enti del Terzo Settore e imprese.">
+  <meta name="theme-color" content="#F3F7F6">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <!-- Stili: ordine = token → base → componenti → widget -->
+  <link rel="stylesheet" href="src/css/tokens.css">
+  <link rel="stylesheet" href="src/css/base.css">
+  <link rel="stylesheet" href="src/css/components.css">
+  <link rel="stylesheet" href="src/css/widget.css">
+
+  <link rel="modulepreload" href="src/js/render/layout.js">
+  <link rel="modulepreload" href="src/js/design/engine.js">
+
+  <!--
+    INIEZIONE DATI (opzionale) / DATA INJECTION (optional)
+    Un CMS o un server può fornire i dati in 3 modi (priorità decrescente):
+      1) <script>window.__STUDIO_DATA__ = {...}; window.__STUDIO_DESIGNS__ = {...};</script>
+      2) <script type="application/json" id="studio-data">{...}</script>
+         <script type="application/json" id="studio-designs">{...}</script>
+      3) data-src / data-designs-src su #app → fetch JSON (REST, headless CMS, file statico)
+  -->
+  <script type="module" src="src/js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Vai al contenuto principale</a>
+
+  <div id="app" data-src="data/site.json" data-designs-src="data/designs.json">
+    <noscript>
+      <p style="padding:2rem;max-width:40rem;margin:auto">
+        Per la versione completa abilita JavaScript oppure apri <a href="dist/index.html">la versione statica</a>.
+        Contatti: <a href="mailto:info@studiodallasta.it">info@studiodallasta.it</a>
+      </p>
+    </noscript>
+  </div>
+</body>
+</html>

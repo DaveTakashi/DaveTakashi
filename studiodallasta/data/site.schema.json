@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://studiodallasta.it/schemas/site.schema.json",
+  "title": "Studio Dall'Asta — Site content",
+  "description": "Schema dei contenuti (IT/EN) per CMS headless. Content schema for headless CMS.",
+  "type": "object",
+  "required": ["locales", "defaultLocale", "brand", "sections"],
+  "$defs": {
+    "i18n": {
+      "description": "Stringa semplice o oggetto per lingua. Plain string or per-locale object.",
+      "oneOf": [
+        { "type": "string" },
+        { "type": "object", "additionalProperties": { "type": "string" }, "minProperties": 1 }
+      ]
+    },
+    "link": {
+      "type": "object",
+      "required": ["label", "href"],
+      "properties": {
+        "label": { "$ref": "#/$defs/i18n" },
+        "href": { "type": "string" },
+        "variant": { "enum": ["primary", "ghost"] }
+      }
+    },
+    "image": {
+      "type": "object",
+      "required": ["src", "alt"],
+      "properties": {
+        "src": { "type": "string" },
+        "alt": { "$ref": "#/$defs/i18n" },
+        "width": { "type": "integer" },
+        "height": { "type": "integer" },
+        "eager": { "type": "boolean" }
+      }
+    },
+    "iconItem": {
+      "type": "object",
+      "properties": {
+        "icon": { "type": "string" },
+        "title": { "$ref": "#/$defs/i18n" },
+        "text": { "$ref": "#/$defs/i18n" }
+      }
+    },
+    "sectionBase": {
+      "type": "object",
+      "required": ["type", "id"],
+      "properties": {
+        "type": { "enum": ["hero", "stats", "services", "method", "sectors", "about", "insights", "faq", "cta", "contact"], "description": "Tipi built-in; altri tipi possono essere registrati a runtime." },
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "hidden": { "type": "boolean" },
+        "eyebrow": { "$ref": "#/$defs/i18n" },
+        "title": { "$ref": "#/$defs/i18n" },
+        "lead": { "$ref": "#/$defs/i18n" },
+        "illustration": { "enum": ["hero", "community", "business", "studio"] },
+        "illustrationAlt": { "$ref": "#/$defs/i18n" },
+        "image": { "$ref": "#/$defs/image" }
+      }
+    }
+  },
+  "properties": {
+    "version": { "type": "string" },
+    "locales": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "defaultLocale": { "type": "string" },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "url": { "type": "string", "format": "uri" },
+        "title": { "$ref": "#/$defs/i18n" },
+        "description": { "$ref": "#/$defs/i18n" }
+      }
+    },
+    "brand": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string" },
+        "monogram": { "type": "string", "maxLength": 3 },
+        "tagline": { "$ref": "#/$defs/i18n" }
+      }
+    },
+    "ui": { "type": "object", "additionalProperties": { "$ref": "#/$defs/i18n" } },
+    "navigation": { "type": "array", "items": { "$ref": "#/$defs/link" } },
+    "headerCta": { "$ref": "#/$defs/link" },
+    "sections": {
+      "type": "array",
+      "items": {
+        "allOf": [{ "$ref": "#/$defs/sectionBase" }],
+        "properties": {
+          "items": { "type": "array" },
+          "groups": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "title", "items"],
+              "properties": {
+                "id": { "type": "string" },
+                "tab": { "$ref": "#/$defs/i18n" },
+                "title": { "$ref": "#/$defs/i18n" },
+                "intro": { "$ref": "#/$defs/i18n" },
+                "image": { "$ref": "#/$defs/image" },
+                "items": { "type": "array", "items": { "$ref": "#/$defs/iconItem" } }
+              }
+            }
+          },
+          "steps": { "type": "array", "items": { "$ref": "#/$defs/iconItem" } },
+          "actions": { "type": "array", "items": { "$ref": "#/$defs/link" } },
+          "action": { "$ref": "#/$defs/link" },
+          "form": { "type": "object" }
+        }
+      }
+    },
+    "contact": {
+      "type": "object",
+      "properties": {
+        "email": { "type": "string", "format": "email" },
+        "pec": { "type": "string" },
+        "phone": { "type": "string" },
+        "address": { "$ref": "#/$defs/i18n" },
+        "hours": { "$ref": "#/$defs/i18n" }
+      }
+    },
+    "footer": {
+      "type": "object",
+      "properties": {
+        "legal": { "$ref": "#/$defs/i18n" },
+        "links": { "type": "array", "items": { "$ref": "#/$defs/link" } }
+      }
+    }
+  }
+}

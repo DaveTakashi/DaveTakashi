@@ -1,0 +1,164 @@
+{
+  "version": "1.0.0",
+  "default": "vetro",
+  "base": {
+    "fontSans": "\"Inter\", \"Segoe UI Variable Text\", \"Segoe UI\", system-ui, -apple-system, \"Helvetica Neue\", Arial, sans-serif",
+    "fontDisplay": "\"Inter Tight\", \"Segoe UI Variable Display\", \"Segoe UI\", system-ui, -apple-system, \"Helvetica Neue\", Arial, sans-serif",
+    "displayWeight": 600,
+    "displayTracking": "-0.025em",
+    "radius": 18,
+    "glass": 45,
+    "blur": 26,
+    "borderWidth": 1,
+    "focusWidth": 3,
+    "shadow": "0 1px 2px rgba(16,24,40,.04), 0 12px 32px -12px rgba(16,24,40,.14)",
+    "shadowDark": "0 1px 2px rgba(0,0,0,.4), 0 16px 40px -16px rgba(0,0,0,.6)",
+    "orbs": true,
+    "underlineLinks": false
+  },
+  "designs": [
+    {
+      "id": "vetro",
+      "label": { "it": "Vetro", "en": "Glass" },
+      "description": { "it": "Trasparenze, luce e profondità", "en": "Transparency, light and depth" },
+      "shape": {},
+      "colors": {
+        "light": {
+          "bg": "#F3F7F6", "bg2": "#E6EFED",
+          "orb1": "#9FD8CB", "orb2": "#C5D7F2", "orb3": "#F1E2C6",
+          "surface": "#FFFFFF", "border": "rgba(13,40,40,.11)",
+          "text": "#0C1E21", "muted": "#475B5E",
+          "accent": "#0B6B63", "accentContrast": "#FFFFFF", "accentSoft": "#D6EEEA",
+          "focus": "#0B6B63"
+        },
+        "dark": {
+          "bg": "#081315", "bg2": "#0D1C1F",
+          "orb1": "#0F5B52", "orb2": "#1C3358", "orb3": "#3D2F1A",
+          "surface": "#12262A", "border": "rgba(255,255,255,.10)",
+          "text": "#EAF4F2", "muted": "#A5BBB8",
+          "accent": "#62D6C5", "accentContrast": "#03201C", "accentSoft": "#123A3A",
+          "focus": "#8FE8DB"
+        }
+      }
+    },
+    {
+      "id": "editoriale",
+      "label": { "it": "Editoriale", "en": "Editorial" },
+      "description": { "it": "Carta, inchiostro e tipografia serif", "en": "Paper, ink and serif typography" },
+      "shape": {
+        "fontDisplay": "\"Fraunces\", \"Iowan Old Style\", \"Palatino Linotype\", Palatino, \"Book Antiqua\", Georgia, serif",
+        "displayWeight": 500,
+        "displayTracking": "-0.015em",
+        "radius": 4,
+        "glass": 8,
+        "blur": 8,
+        "orbs": false,
+        "shadow": "0 1px 0 rgba(20,20,20,.06)",
+        "underlineLinks": true
+      },
+      "colors": {
+        "light": {
+          "bg": "#FAF9F5", "bg2": "#F2F0EA",
+          "orb1": "#EDEAE0", "orb2": "#EFEDE6", "orb3": "#ECE8DE",
+          "surface": "#FFFFFF", "border": "rgba(20,20,20,.14)",
+          "text": "#151515", "muted": "#54524C",
+          "accent": "#1E3A5F", "accentContrast": "#FFFFFF", "accentSoft": "#E4E9F0",
+          "focus": "#1E3A5F"
+        },
+        "dark": {
+          "bg": "#121211", "bg2": "#171715",
+          "orb1": "#1A1A18", "orb2": "#1A1A18", "orb3": "#1A1A18",
+          "surface": "#1C1C1A", "border": "rgba(255,255,255,.14)",
+          "text": "#F3F1EA", "muted": "#B5B1A7",
+          "accent": "#A9C4EB", "accentContrast": "#0E1A2B", "accentSoft": "#232E3C",
+          "focus": "#C7DAF5"
+        }
+      }
+    },
+    {
+      "id": "terra",
+      "label": { "it": "Terra", "en": "Earth" },
+      "description": { "it": "Calore, materia e umanità", "en": "Warmth, matter and humanity" },
+      "shape": { "radius": 22, "glass": 38 },
+      "colors": {
+        "light": {
+          "bg": "#FBF6F0", "bg2": "#F3EADF",
+          "orb1": "#F0C6A4", "orb2": "#E8D7B4", "orb3": "#D4E2CC",
+          "surface": "#FFFDF9", "border": "rgba(60,30,10,.12)",
+          "text": "#2A1C14", "muted": "#6A5447",
+          "accent": "#9A3A1C", "accentContrast": "#FFFFFF", "accentSoft": "#F5E0D4",
+          "focus": "#9A3A1C"
+        },
+        "dark": {
+          "bg": "#16100C", "bg2": "#1E1611",
+          "orb1": "#5A2915", "orb2": "#4A391A", "orb3": "#1D3322",
+          "surface": "#2A1E17", "border": "rgba(255,240,225,.12)",
+          "text": "#F7ECE2", "muted": "#CDB7A6",
+          "accent": "#F2A47D", "accentContrast": "#2A1209", "accentSoft": "#3B2519",
+          "focus": "#F7C2A6"
+        }
+      }
+    },
+    {
+      "id": "ardesia",
+      "label": { "it": "Ardesia", "en": "Slate" },
+      "description": { "it": "Rigore, precisione, istituzionale", "en": "Rigor, precision, institutional" },
+      "shape": { "radius": 12, "glass": 40, "displayWeight": 650 },
+      "colors": {
+        "light": {
+          "bg": "#F3F5F9", "bg2": "#E6EBF4",
+          "orb1": "#B8C7EA", "orb2": "#D5CCF0", "orb3": "#CBE5EF",
+          "surface": "#FFFFFF", "border": "rgba(17,24,39,.11)",
+          "text": "#0F1729", "muted": "#4A5466",
+          "accent": "#2C4DB0", "accentContrast": "#FFFFFF", "accentSoft": "#DFE6FA",
+          "focus": "#2C4DB0"
+        },
+        "dark": {
+          "bg": "#0A0E19", "bg2": "#101726",
+          "orb1": "#1E2B5C", "orb2": "#2D1F50", "orb3": "#0F3446",
+          "surface": "#151D2D", "border": "rgba(255,255,255,.10)",
+          "text": "#E9EDF6", "muted": "#A3AEC3",
+          "accent": "#93ABFF", "accentContrast": "#0B1230", "accentSoft": "#1C2748",
+          "focus": "#B9C8FF"
+        }
+      }
+    },
+    {
+      "id": "contrasto",
+      "label": { "it": "Alto contrasto", "en": "High contrast" },
+      "description": { "it": "Massima leggibilità, nessuna trasparenza", "en": "Maximum legibility, no transparency" },
+      "shape": {
+        "radius": 6,
+        "glass": 0,
+        "glassLocked": true,
+        "orbs": false,
+        "borderWidth": 2,
+        "focusWidth": 4,
+        "displayWeight": 700,
+        "displayTracking": "-0.01em",
+        "shadow": "none",
+        "shadowDark": "none",
+        "underlineLinks": true
+      },
+      "colors": {
+        "light": {
+          "bg": "#FFFFFF", "bg2": "#FFFFFF",
+          "orb1": "#FFFFFF", "orb2": "#FFFFFF", "orb3": "#FFFFFF",
+          "surface": "#FFFFFF", "border": "#000000",
+          "text": "#000000", "muted": "#1F1F1F",
+          "accent": "#003E99", "accentContrast": "#FFFFFF", "accentSoft": "#E3ECFA",
+          "focus": "#B3002D"
+        },
+        "dark": {
+          "bg": "#000000", "bg2": "#000000",
+          "orb1": "#000000", "orb2": "#000000", "orb3": "#000000",
+          "surface": "#000000", "border": "#FFFFFF",
+          "text": "#FFFFFF", "muted": "#EDEDED",
+          "accent": "#FFD60A", "accentContrast": "#000000", "accentSoft": "#2B2500",
+          "focus": "#00E5FF"
+        }
+      }
+    }
+  ],
+  "accentPresets": ["#0B6B63", "#2C4DB0", "#9A3A1C", "#6B3FA0", "#1E3A5F", "#8A6A00"]
+}

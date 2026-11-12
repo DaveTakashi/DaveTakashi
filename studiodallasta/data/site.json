@@ -1,0 +1,287 @@
+{
+  "$schema": "./site.schema.json",
+  "version": "1.0.0",
+  "locales": ["it", "en"],
+  "defaultLocale": "it",
+  "meta": {
+    "url": "https://www.studiodallasta.it",
+    "title": {
+      "it": "Studio Dall'Asta — Commercialista per Terzo Settore e gestione d'impresa",
+      "en": "Studio Dall'Asta — Chartered accountants for the Third Sector and business management"
+    },
+    "description": {
+      "it": "Consulenza fiscale, contabile e gestionale per Enti del Terzo Settore, associazioni, fondazioni, cooperative sociali e imprese. Metodo chiaro, alta specializzazione.",
+      "en": "Tax, accounting and management advisory for Third Sector entities, associations, foundations, social cooperatives and companies. Clear method, deep specialisation."
+    }
+  },
+  "brand": {
+    "name": "Studio Dall'Asta",
+    "monogram": "DA",
+    "tagline": { "it": "Dottori Commercialisti", "en": "Chartered Accountants" }
+  },
+  "ui": {
+    "skip": { "it": "Vai al contenuto principale", "en": "Skip to main content" },
+    "menu": { "it": "Menu", "en": "Menu" },
+    "closeMenu": { "it": "Chiudi menu", "en": "Close menu" },
+    "mainNav": { "it": "Navigazione principale", "en": "Main navigation" },
+    "language": { "it": "Lingua", "en": "Language" },
+    "readMore": { "it": "Leggi", "en": "Read" },
+    "home": { "it": "Studio Dall'Asta, torna all'inizio", "en": "Studio Dall'Asta, back to top" },
+    "designStyle": { "it": "Stile grafico", "en": "Design style" },
+    "designStyleHint": { "it": "Personalizza l'aspetto del sito. Le preferenze restano su questo dispositivo.", "en": "Customise how the site looks. Preferences stay on this device." },
+    "dsDesign": { "it": "Design", "en": "Design" },
+    "dsScheme": { "it": "Modalità colore", "en": "Colour mode" },
+    "dsAuto": { "it": "Sistema", "en": "System" },
+    "dsLight": { "it": "Chiara", "en": "Light" },
+    "dsDark": { "it": "Scura", "en": "Dark" },
+    "dsAccent": { "it": "Colore d'accento", "en": "Accent colour" },
+    "dsAccentDefault": { "it": "Predefinito del design", "en": "Design default" },
+    "dsAccentCustom": { "it": "Personalizzato", "en": "Custom" },
+    "dsGlass": { "it": "Trasparenza", "en": "Transparency" },
+    "dsGlassLocked": { "it": "Disattivata in questo design per la massima leggibilità.", "en": "Disabled in this design for maximum legibility." },
+    "dsRadius": { "it": "Angoli", "en": "Corners" },
+    "dsRadiusDesign": { "it": "Design", "en": "Design" },
+    "dsSharp": { "it": "Netti", "en": "Sharp" },
+    "dsSoft": { "it": "Morbidi", "en": "Soft" },
+    "dsRound": { "it": "Arrotondati", "en": "Round" },
+    "dsDensity": { "it": "Spaziatura", "en": "Spacing" },
+    "dsCompact": { "it": "Compatta", "en": "Compact" },
+    "dsComfortable": { "it": "Equilibrata", "en": "Balanced" },
+    "dsAiry": { "it": "Ariosa", "en": "Airy" },
+    "dsText": { "it": "Dimensione testo", "en": "Text size" },
+    "dsMotion": { "it": "Riduci animazioni", "en": "Reduce motion" },
+    "dsReset": { "it": "Ripristina", "en": "Reset" },
+    "dsExport": { "it": "Esporta token", "en": "Export tokens" },
+    "dsClose": { "it": "Chiudi pannello stile", "en": "Close style panel" },
+    "dsApplied": { "it": "Stile aggiornato", "en": "Style updated" },
+    "dsExported": { "it": "Token esportati in JSON", "en": "Tokens exported as JSON" },
+    "formRequired": { "it": "obbligatorio", "en": "required" },
+    "formErrorRequired": { "it": "Compila questo campo.", "en": "Please fill in this field." },
+    "formErrorEmail": { "it": "Inserisci un indirizzo email valido, es. nome@dominio.it", "en": "Enter a valid email address, e.g. name@domain.com" },
+    "formErrorPrivacy": { "it": "Per inviare la richiesta è necessario accettare l'informativa.", "en": "You need to accept the privacy notice to send the request." },
+    "formErrorSummary": { "it": "Controlla i campi evidenziati.", "en": "Please check the highlighted fields." },
+    "formSending": { "it": "Invio in corso…", "en": "Sending…" },
+    "formSuccess": { "it": "Grazie. Abbiamo ricevuto la richiesta e ti risponderemo entro un giorno lavorativo.", "en": "Thank you. We received your request and will reply within one business day." },
+    "formMailto": { "it": "Si aprirà il tuo programma di posta con il messaggio già compilato.", "en": "Your email app will open with the message pre-filled." },
+    "newTab": { "it": "(si apre in una nuova scheda)", "en": "(opens in a new tab)" }
+  },
+  "navigation": [
+    { "label": { "it": "Servizi", "en": "Services" }, "href": "#servizi" },
+    { "label": { "it": "Metodo", "en": "Method" }, "href": "#metodo" },
+    { "label": { "it": "Per chi", "en": "Who we serve" }, "href": "#settori" },
+    { "label": { "it": "Lo Studio", "en": "The Firm" }, "href": "#studio" },
+    { "label": { "it": "Approfondimenti", "en": "Insights" }, "href": "#approfondimenti" },
+    { "label": { "it": "FAQ", "en": "FAQ" }, "href": "#faq" }
+  ],
+  "headerCta": { "label": { "it": "Contattaci", "en": "Contact us" }, "href": "#contatti" },
+  "sections": [
+    {
+      "type": "hero",
+      "id": "home",
+      "eyebrow": { "it": "Terzo Settore · Gestione d'impresa", "en": "Third Sector · Business management" },
+      "title": { "it": "Numeri chiari per chi crea valore.", "en": "Clear numbers for those who create value." },
+      "highlight": { "it": "valore", "en": "value" },
+      "lead": {
+        "it": "Affianchiamo Enti del Terzo Settore e imprese nella gestione fiscale, contabile e strategica. Con metodo, trasparenza e un unico referente che conosce davvero la tua realtà.",
+        "en": "We support Third Sector entities and companies with tax, accounting and strategic management. With method, transparency and a single advisor who truly knows your organisation."
+      },
+      "actions": [
+        { "label": { "it": "Prenota un primo incontro", "en": "Book a first meeting" }, "href": "#contatti", "variant": "primary" },
+        { "label": { "it": "Scopri i servizi", "en": "Explore services" }, "href": "#servizi", "variant": "ghost" }
+      ],
+      "badges": [
+        { "icon": "shield", "text": { "it": "Iscritti all'Albo ODCEC", "en": "Registered with ODCEC" } },
+        { "icon": "globe", "text": { "it": "In studio e da remoto", "en": "In person and remote" } }
+      ],
+      "illustration": "hero",
+      "illustrationAlt": {
+        "it": "Cruscotto illustrato con andamento economico, bilancio ETS e adempimenti completati",
+        "en": "Illustrated dashboard showing financial trend, Third Sector financial statement and completed filings"
+      }
+    },
+    {
+      "type": "stats",
+      "id": "numeri",
+      "label": { "it": "Lo studio in sintesi", "en": "The firm at a glance" },
+      "items": [
+        { "value": "2", "label": { "it": "aree di alta specializzazione", "en": "areas of deep specialisation" } },
+        { "value": "1", "label": { "it": "referente dedicato per ogni cliente", "en": "dedicated advisor per client" } },
+        { "value": "24h", "label": { "it": "tempo massimo di prima risposta", "en": "maximum first-response time" } },
+        { "value": "100%", "label": { "it": "documenti condivisi in digitale", "en": "documents shared digitally" } }
+      ]
+    },
+    {
+      "type": "services",
+      "id": "servizi",
+      "eyebrow": { "it": "Servizi", "en": "Services" },
+      "title": { "it": "Due specializzazioni, un solo standard di qualità.", "en": "Two specialisations, one quality standard." },
+      "lead": {
+        "it": "Competenze verticali per chi opera nel non profit e per chi guida un'impresa: conosciamo le norme, ma soprattutto conosciamo le persone che le devono applicare.",
+        "en": "Vertical expertise for non-profits and for business leaders: we know the rules, and above all we know the people who have to apply them."
+      },
+      "groups": [
+        {
+          "id": "terzo-settore",
+          "tab": { "it": "Terzo Settore", "en": "Third Sector" },
+          "title": { "it": "Enti del Terzo Settore", "en": "Third Sector entities" },
+          "intro": {
+            "it": "Accompagniamo associazioni, fondazioni, ODV, APS, cooperative e imprese sociali nella Riforma (D.Lgs. 117/2017) con un approccio pratico e sostenibile.",
+            "en": "We guide associations, foundations, volunteer and social promotion organisations, cooperatives and social enterprises through the Reform (Legislative Decree 117/2017) with a practical, sustainable approach."
+          },
+          "illustration": "community",
+          "items": [
+            { "icon": "registry", "title": { "it": "RUNTS e statuti", "en": "RUNTS & bylaws" }, "text": { "it": "Iscrizione al Registro Unico Nazionale, adeguamento statutario e mantenimento dei requisiti.", "en": "Registration with the National Third Sector Register, bylaw updates and ongoing compliance." } },
+            { "icon": "report", "title": { "it": "Bilancio ETS", "en": "Third Sector financial statements" }, "text": { "it": "Bilancio secondo i modelli ministeriali, rendiconto per cassa e relazione di missione.", "en": "Financial statements on ministerial templates, cash-basis reports and mission report." } },
+            { "icon": "scale", "title": { "it": "Fiscalità e commercialità", "en": "Tax status & commerciality" }, "text": { "it": "Analisi della natura delle attività, regimi fiscali agevolati e gestione IVA.", "en": "Assessment of activities, preferential tax regimes and VAT management." } },
+            { "icon": "heart", "title": { "it": "5 per mille e raccolta fondi", "en": "5x1000 & fundraising" }, "text": { "it": "Accreditamento, rendicontazione delle somme e delle raccolte fondi.", "en": "Accreditation and reporting of 5x1000 funds and fundraising campaigns." } },
+            { "icon": "community", "title": { "it": "Bilancio sociale", "en": "Social report" }, "text": { "it": "Redazione del bilancio sociale e misurazione dell'impatto per stakeholder e donatori.", "en": "Social reporting and impact measurement for stakeholders and donors." } },
+            { "icon": "shield", "title": { "it": "Organo di controllo", "en": "Supervisory body" }, "text": { "it": "Incarichi di organo di controllo e revisione, con verifiche periodiche documentate.", "en": "Supervisory board and audit appointments, with documented periodic reviews." } }
+          ]
+        },
+        {
+          "id": "aziende",
+          "tab": { "it": "Gestione aziendale", "en": "Business management" },
+          "title": { "it": "Imprese e professionisti", "en": "Companies and professionals" },
+          "intro": {
+            "it": "Dalla contabilità alla pianificazione: trasformiamo i dati in decisioni, con strumenti di controllo semplici da leggere e da usare.",
+            "en": "From bookkeeping to planning: we turn data into decisions with management tools that are easy to read and use."
+          },
+          "illustration": "business",
+          "items": [
+            { "icon": "calculator", "title": { "it": "Contabilità e bilancio", "en": "Accounting & statements" }, "text": { "it": "Tenuta contabile, bilancio d'esercizio e adempimenti periodici senza sorprese.", "en": "Bookkeeping, annual statements and periodic filings with no surprises." } },
+            { "icon": "receipt", "title": { "it": "Consulenza fiscale", "en": "Tax advisory" }, "text": { "it": "Dichiarativi, pianificazione fiscale e assistenza nei rapporti con l'Amministrazione finanziaria.", "en": "Tax returns, tax planning and support with the tax authorities." } },
+            { "icon": "chart", "title": { "it": "Controllo di gestione", "en": "Management control" }, "text": { "it": "Budget, cruscotti KPI e analisi degli scostamenti per decidere con i numeri.", "en": "Budgets, KPI dashboards and variance analysis to decide with numbers." } },
+            { "icon": "compass", "title": { "it": "Pianificazione finanziaria", "en": "Financial planning" }, "text": { "it": "Flussi di cassa prospettici, rapporti con le banche e sostenibilità degli investimenti.", "en": "Cash-flow forecasting, banking relationships and investment sustainability." } },
+            { "icon": "lifebuoy", "title": { "it": "Adeguati assetti e crisi", "en": "Governance & early warning" }, "text": { "it": "Assetti organizzativi (art. 2086 c.c.) e strumenti di allerta previsti dal Codice della crisi.", "en": "Organisational structures (Art. 2086 Civil Code) and early-warning tools under the Insolvency Code." } },
+            { "icon": "merge", "title": { "it": "Operazioni straordinarie", "en": "Extraordinary transactions" }, "text": { "it": "Costituzioni, trasformazioni, conferimenti, fusioni e passaggi generazionali.", "en": "Incorporations, conversions, contributions, mergers and generational transfers." } }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "method",
+      "id": "metodo",
+      "eyebrow": { "it": "Metodo", "en": "Method" },
+      "title": { "it": "Un percorso chiaro, dal primo incontro in poi.", "en": "A clear path, from the first meeting onward." },
+      "steps": [
+        { "title": { "it": "Ascolto", "en": "Listen" }, "text": { "it": "Un primo incontro per conoscere l'ente o l'impresa, le persone e gli obiettivi.", "en": "A first meeting to understand the organisation, its people and goals." } },
+        { "title": { "it": "Diagnosi", "en": "Diagnose" }, "text": { "it": "Analizziamo documenti, adempimenti e rischi. Ti restituiamo un quadro scritto e comprensibile.", "en": "We review documents, obligations and risks, and give you a clear written overview." } },
+        { "title": { "it": "Piano", "en": "Plan" }, "text": { "it": "Priorità, calendario e preventivo trasparente. Sai sempre cosa facciamo e quanto costa.", "en": "Priorities, calendar and a transparent quote. You always know what we do and what it costs." } },
+        { "title": { "it": "Affiancamento", "en": "Partnership" }, "text": { "it": "Un referente dedicato, scadenze monitorate e incontri periodici di verifica.", "en": "A dedicated advisor, monitored deadlines and regular review meetings." } }
+      ]
+    },
+    {
+      "type": "sectors",
+      "id": "settori",
+      "eyebrow": { "it": "Per chi lavoriamo", "en": "Who we serve" },
+      "title": { "it": "Realtà diverse, la stessa cura.", "en": "Different organisations, the same care." },
+      "items": [
+        { "icon": "community", "title": { "it": "Associazioni, ODV e APS", "en": "Associations, ODV & APS" } },
+        { "icon": "landmark", "title": { "it": "Fondazioni", "en": "Foundations" } },
+        { "icon": "handshake", "title": { "it": "Cooperative sociali", "en": "Social cooperatives" } },
+        { "icon": "leaf", "title": { "it": "Imprese sociali", "en": "Social enterprises" } },
+        { "icon": "cross", "title": { "it": "Enti religiosi (ramo ETS)", "en": "Religious bodies (ETS branch)" } },
+        { "icon": "building", "title": { "it": "PMI e gruppi familiari", "en": "SMEs & family businesses" } },
+        { "icon": "briefcase", "title": { "it": "Professionisti", "en": "Professionals" } },
+        { "icon": "rocket", "title": { "it": "Startup e nuove imprese", "en": "Start-ups & new ventures" } }
+      ]
+    },
+    {
+      "type": "about",
+      "id": "studio",
+      "eyebrow": { "it": "Lo Studio", "en": "The Firm" },
+      "title": { "it": "Competenza tecnica, linguaggio umano.", "en": "Technical expertise, human language." },
+      "text": [
+        {
+          "it": "Lo Studio Dall'Asta nasce per offrire a enti non profit e imprese una consulenza di alto livello, costruita sulla relazione e sulla chiarezza. Crediamo che una buona gestione amministrativa liberi tempo ed energie per ciò che conta: la missione dell'ente, la crescita dell'impresa.",
+          "en": "Studio Dall'Asta was founded to give non-profits and companies high-level advice built on relationships and clarity. We believe sound administration frees time and energy for what matters: the organisation's mission, the company's growth."
+        },
+        {
+          "it": "Lavoriamo con strumenti digitali sicuri, aggiornamento professionale continuo e una rete di specialisti (consulenti del lavoro, avvocati, revisori) per offrire risposte complete.",
+          "en": "We use secure digital tools, continuous professional training and a network of specialists (payroll consultants, lawyers, auditors) to provide complete answers."
+        }
+      ],
+      "values": [
+        { "icon": "check", "text": { "it": "Preventivi chiari e scritti", "en": "Clear, written quotes" } },
+        { "icon": "check", "text": { "it": "Un referente unico e raggiungibile", "en": "A single, reachable advisor" } },
+        { "icon": "check", "text": { "it": "Scadenzario condiviso", "en": "Shared deadline calendar" } },
+        { "icon": "check", "text": { "it": "Riservatezza e conformità GDPR", "en": "Confidentiality and GDPR compliance" } }
+      ],
+      "illustration": "studio",
+      "illustrationAlt": { "it": "Illustrazione dello studio: grandi archi luminosi e una scrivania ordinata", "en": "Illustration of the office: large bright arches and a tidy desk" }
+    },
+    {
+      "type": "insights",
+      "id": "approfondimenti",
+      "eyebrow": { "it": "Approfondimenti", "en": "Insights" },
+      "title": { "it": "Novità e guide pratiche.", "en": "News and practical guides." },
+      "items": [
+        { "date": "2026-10-28", "tag": { "it": "Terzo Settore", "en": "Third Sector" }, "title": { "it": "Bilancio ETS: le scelte che contano prima della chiusura", "en": "Third Sector statements: decisions that matter before year-end" }, "href": "#" },
+        { "date": "2026-10-09", "tag": { "it": "Impresa", "en": "Business" }, "title": { "it": "Adeguati assetti: un cruscotto minimo per le PMI", "en": "Adequate structures: a minimum dashboard for SMEs" }, "href": "#" },
+        { "date": "2026-09-18", "tag": { "it": "Fiscale", "en": "Tax" }, "title": { "it": "5 per mille: calendario e rendicontazione senza affanni", "en": "5x1000: calendar and reporting without stress" }, "href": "#" }
+      ]
+    },
+    {
+      "type": "faq",
+      "id": "faq",
+      "eyebrow": { "it": "Domande frequenti", "en": "FAQ" },
+      "title": { "it": "Risposte semplici a domande comuni.", "en": "Simple answers to common questions." },
+      "items": [
+        { "q": { "it": "Il mio ente deve iscriversi al RUNTS?", "en": "Does my organisation have to register with RUNTS?" }, "a": { "it": "Dipende dalla forma giuridica e dagli obiettivi: l'iscrizione dà accesso alle agevolazioni del Codice del Terzo Settore ma comporta obblighi precisi. Valutiamo insieme costi e benefici.", "en": "It depends on legal form and goals: registration grants access to Third Sector Code benefits but brings specific obligations. We assess costs and benefits together." } },
+        { "q": { "it": "Quali scritture contabili deve tenere un ETS?", "en": "What accounting records must a Third Sector entity keep?" }, "a": { "it": "In base alle entrate, l'ente può redigere un rendiconto per cassa o un bilancio completo con relazione di missione. Ti indichiamo il regime corretto e impostiamo la contabilità di conseguenza.", "en": "Depending on revenue, the entity prepares either a cash-basis report or full financial statements with a mission report. We identify the right regime and set up the books accordingly." } },
+        { "q": { "it": "Lavorate anche da remoto?", "en": "Do you work remotely?" }, "a": { "it": "Sì. Documenti, firme e incontri possono essere gestiti interamente online, con piattaforme sicure. Restiamo disponibili anche per incontri in studio.", "en": "Yes. Documents, signatures and meetings can be handled entirely online on secure platforms. In-person meetings remain available." } },
+        { "q": { "it": "Come funziona il primo incontro?", "en": "How does the first meeting work?" }, "a": { "it": "È un colloquio conoscitivo, senza impegno, in cui raccogliamo le informazioni essenziali. Entro pochi giorni ricevi una proposta scritta con attività e compenso.", "en": "It's a no-obligation introductory call where we gather the essentials. Within a few days you receive a written proposal with scope and fees." } }
+      ]
+    },
+    {
+      "type": "cta",
+      "id": "inizia",
+      "title": { "it": "Parliamo della tua organizzazione.", "en": "Let's talk about your organisation." },
+      "text": { "it": "Un primo confronto, chiaro e senza impegno.", "en": "A first, clear, no-obligation conversation." },
+      "action": { "label": { "it": "Scrivici", "en": "Write to us" }, "href": "#contatti" }
+    },
+    {
+      "type": "contact",
+      "id": "contatti",
+      "eyebrow": { "it": "Contatti", "en": "Contact" },
+      "title": { "it": "Raccontaci di cosa hai bisogno.", "en": "Tell us what you need." },
+      "lead": { "it": "Rispondiamo entro un giorno lavorativo.", "en": "We reply within one business day." },
+      "form": {
+        "endpoint": "",
+        "mailto": "info@studiodallasta.it",
+        "fields": {
+          "name": { "it": "Nome e cognome", "en": "Full name" },
+          "email": { "it": "Email", "en": "Email" },
+          "org": { "it": "Tipo di organizzazione", "en": "Organisation type" },
+          "message": { "it": "Messaggio", "en": "Message" },
+          "privacy": { "it": "Ho letto l'informativa privacy e acconsento al trattamento dei dati per essere ricontattato.", "en": "I have read the privacy notice and consent to data processing in order to be contacted." },
+          "submit": { "it": "Invia richiesta", "en": "Send request" }
+        },
+        "orgOptions": [
+          { "value": "ets", "label": { "it": "Ente del Terzo Settore / Associazione", "en": "Third Sector entity / Association" } },
+          { "value": "fondazione", "label": { "it": "Fondazione", "en": "Foundation" } },
+          { "value": "cooperativa", "label": { "it": "Cooperativa o impresa sociale", "en": "Cooperative or social enterprise" } },
+          { "value": "impresa", "label": { "it": "Impresa", "en": "Company" } },
+          { "value": "professionista", "label": { "it": "Professionista", "en": "Professional" } },
+          { "value": "altro", "label": { "it": "Altro", "en": "Other" } }
+        ],
+        "privacyHref": "/privacy"
+      }
+    }
+  ],
+  "contact": {
+    "email": "info@studiodallasta.it",
+    "pec": "studiodallasta@pec.it",
+    "phone": "+39 000 000 0000",
+    "address": { "it": "Via Esempio 1, 00000 Città (XX)", "en": "Via Esempio 1, 00000 City (XX), Italy" },
+    "hours": { "it": "Lun–Ven 9:00–13:00 · 14:30–18:30", "en": "Mon–Fri 9:00–13:00 · 14:30–18:30" }
+  },
+  "footer": {
+    "legal": { "it": "Studio Dall'Asta · P.IVA 00000000000", "en": "Studio Dall'Asta · VAT 00000000000" },
+    "links": [
+      { "label": { "it": "Privacy", "en": "Privacy" }, "href": "/privacy" },
+      { "label": { "it": "Cookie", "en": "Cookies" }, "href": "/cookie" },
+      { "label": { "it": "Dichiarazione di accessibilità", "en": "Accessibility statement" }, "href": "/accessibilita" }
+    ]
+  }
+}
